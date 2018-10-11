@@ -7,6 +7,32 @@ CD\
 dir
 
 
-GIT
+GIT BASH
 
 cd /e/......
+git status
+git commit
+git rm *file name* (removes files)
+git branch *new branch name here*
+git checkout *branch name here* (switch to a branch)
+git merg *name of source branch* (before merging, make sure you are on the destination branch)
+git stash (stashes changes made to a branch, this must be done if you won't be committing before checking out 
+	another	branch or else the changes will persist during the branch change)
+adding a set of files or all files (leave out the parentheses and choose one)
+git add (*filename*) (*.html) (.) (-A)
+
+creating a .gitignore
+touch.gitignore  (typing "*.log" will make git ignore any files that have .log in their name)
+
+git remote (shows alias for available repositories)
+git remote -v (shows URLs for the repository)
+git clone *url of repository to be cloned into our project*
+git fetch *repository alias* (gets changes made since last fetch or clone, will need to manually be merged)
+git pull *repository alias* (fetches and merges changes from remote branch into current branch)
+git push *repository alias* *branch for the commit to happen to* (pushes changes to remote repo and commit to a
+								specific branch)
+git remote add *name of repository alias* *URL*
+
+https://git-scm.com/book/en/v2 (free e-book)
+https://github.com/joshnh/Git-Commands
+https://www.youtube.com/watch?v=Y9XZQO1n_7c
