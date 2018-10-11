@@ -1,0 +1,12 @@
+CMD
+
+cd /d C:\users........
+cd..
+CD\
+
+dir
+
+
+GIT
+
+cd /e/......
