@@ -12,6 +12,7 @@ GIT BASH
 cd /e/......
 git status
 git commit
+git commit -m "*commit message here*"
 git rm *file name* (removes files)
 git branch *new branch name here*
 git checkout *branch name here* (switch to a branch)
@@ -20,6 +21,9 @@ git stash (stashes changes made to a branch, this must be done if you won't be c
 	another	branch or else the changes will persist during the branch change)
 adding a set of files or all files (leave out the parentheses and choose one)
 git add (*filename*) (*.html) (.) (-A)
+
+git ls (lists all files)
+git ls -la (lists all files including hidden ones)
 
 creating a .gitignore
 touch.gitignore  (typing "*.log" will make git ignore any files that have .log in their name)

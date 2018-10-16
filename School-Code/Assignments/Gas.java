@@ -9,8 +9,8 @@ public class Gas {
 
     double costOfGas = 0;
     if (pricePerGallonOfGas < 0 || gallonsOfGas < 0) {
-      System.out.print("User entered bad input.");
-    }else if (payedWithCreditCard) {
+      IO.reportBadInput();
+    } else if (payedWithCreditCard) {
       costOfGas = 1.1 * (pricePerGallonOfGas * gallonsOfGas);
       IO.outputDoubleAnswer(costOfGas);
     } else {
