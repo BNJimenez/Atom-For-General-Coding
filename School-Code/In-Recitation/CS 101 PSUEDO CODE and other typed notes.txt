@@ -1,0 +1,29 @@
+Ben, Rex, Zach
+
+Read firstNum
+Read secondNum
+Set Product = 0
+
+FOR firstNum
+
+Product = Product + secondNum
+
+ENDFOR
+
+
+						mod is depicted by "%"
+SET N = 1
+
+FOR N < 101
+
+IF N % 15 = 0
+	DISPLAY FIZZBUZZ
+ELSE IF N % 3 = 0
+	DISPLAY FIZZ
+ELSE IF N % 5 = 0
+	DISPLAY BUZZ
+ELSE
+	DISPLAY N
+INCREMENT N by 1
+
+ENDFOR

@@ -1,3 +1,6 @@
+//10-12-18
+//Programming Assignment 2.3
+
 public class Gas {
   public static void main(String[] args) {
     System.out.print("Enter cost of gallon of gas: ");
@@ -9,8 +12,8 @@ public class Gas {
 
     double costOfGas = 0;
     if (pricePerGallonOfGas < 0 || gallonsOfGas < 0) {
-      System.out.print("User entered bad input.");
-    }else if (payedWithCreditCard) {
+      IO.reportBadInput();
+    } else if (payedWithCreditCard) {
       costOfGas = 1.1 * (pricePerGallonOfGas * gallonsOfGas);
       IO.outputDoubleAnswer(costOfGas);
     } else {
