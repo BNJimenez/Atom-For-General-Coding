@@ -1,5 +1,5 @@
 //  10/16/18
-//  Working with the Student Object
+//  Working with the Objects (student in this case)
 public class StudentTester {
   public static void main(String[] args) {
     Student s1 = new Student();

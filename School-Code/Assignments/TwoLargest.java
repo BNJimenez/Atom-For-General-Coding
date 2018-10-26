@@ -7,25 +7,17 @@ public class TwoLargest {
     double secondLargest = 0;
     double x = 0;
 
-    System.out.print("Enter a sequence of real numbers (the first number ");
-    System.out.print("entered does not count and will become a terminating ");
-    System.out.print("value. You will be prompted to continue entering ");
-    System.out.print("values until you enter at least two unique values and ");
-    System.out.print("THEN reenter the same terminating value:");
+    System.out.print("Enter a sequence of real numbers (the first number " +
+    "entered does not \ncount and will become a terminating value. You will " +
+    "be prompted to \ncontinue entering values until you enter at least two " +
+    "unique values \nand THEN reenter the same terminating value: ");
 
     double terminatingValue = IO.readDouble();
 
-/*    System.out.print("Enter a new value, or if you are done reenter the ");
-    System.out.print("terminating value AFTER you have entered AT LEAST ");
-    System.out.print("two unique values: ");
-    x = IO.readDouble();
-    largest = x;
-*/
-
     while ((x != terminatingValue || secondLargest == 0)) {
-      System.out.print("Enter a new value, or if you are done reenter the ");
-      System.out.print("terminating value AFTER you have entered AT LEAST ");
-      System.out.print("two unique values: ");
+      "terminating value \nAFTER you have entered AT LEAST two unique " +
+      System.out.print("Enter a new value, or if you are done reenter the " +
+      "values: ");
       x = IO.readDouble();
 
       if (x == terminatingValue && (largest == 0 || secondLargest == 0)) {
@@ -53,6 +45,5 @@ public class TwoLargest {
 
     IO.outputDoubleAnswer(largest);
     IO.outputDoubleAnswer(secondLargest);
-//    System.out.print("Largest: " + largest + "\nSecond Largest: " + secondLargest);
   }
 }
